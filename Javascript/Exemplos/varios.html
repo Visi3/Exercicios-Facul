@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function segundosParaHMS(tempoSegundos) {
+            var tHoras, tMinutos, tSegundos;
+            tHoras = parseInt(tempoSegundos / 3600);
+            tMinutos = parseInt((tempoSegundos % 3600) / 60);
+            tSegundos = (tempoSegundos % 3600) % 60;
+            return tHoras + ":" + tMinutos + ":" + tSegundos
+        }
+        function verificaIdade(idadeDoMaluko) {
+            var frase;
+            if (parseInt(idadeDoMaluko) > 18) {
+                frase = "Você pode fazer habilitação";
+            } else
+                if (parseInt(idadeDoMaluko) == 18) {
+                    frase = "Está com a idade minima"
+                } else {
+                    frase = "Vai pra casa e aguarde chegar sua idade";
+                }
+            return frase;
+        }
+        function verificaValor50(valorzinho) {
+return valorzinho > 50 ? "Valor maior que 50" : "Menor ou igual 50";
+        }
+
+        while (true) {
+            var opcaoEscolhida = window.prompt("Escolha o exercício");
+            switch (parseInt(opcaoEscolhida)) {
+                case 0: abort;
+                    break;
+                case 1:
+                    console.log(window.alert("1) Fazer um algoritmo para verificar se um indivíduo pode fazer carteira de habilitação."));
+
+                    console.log(
+                            alert(
+                                    verificaIdade(
+                                        window.prompt("Informe a idade:")
+                                    )
+                                )
+                            );
+                    break;
+                case 2:
+                    console.log(window.alert("2) Fazer um algoritmo que leia um valor e verifique se é maior que 50."));
+                    console.log(window.alert(verificaValor50(window.prompt("Informe um valor:"))));
+                    break;
+
+                default:
+                    window.alert(segundosParaHMS(
+                        window.prompt("Informe o tempo em segundos:")));
+                    break;
+            }
+        }
+
+
+    </script>
+</body>
+</html>

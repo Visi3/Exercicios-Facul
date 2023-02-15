@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EXC13</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var numero1 = Number (window.prompt("Insira um número: "));
+        var numero2 = Number (window.prompt("Insira outro número: "));
+        var expressao = (window.prompt("Insira a expressão desejada: opções =  +  -  *  /"));
+
+        if (expressao == "+") {
+            console.log("A soma é ",numero1 + numero2);
+        } else 
+            if (expressao == "-") {
+                console.log("A subtração é ",numero1 - numero2);
+            } else 
+                if (expressao == "/"){
+                    console.log("A divisão é ",numero1 / numero2);
+                } else 
+                    if (expressao == "*"){
+                        console.log("A multiplicação é ",numero1 * numero2);
+                    } else {
+                        console.log("Expressão inválida!");
+                    }
+    </script>
+</body>
+</html>

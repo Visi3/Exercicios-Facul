@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        //Crie um sistema onde seja possível contar o número de vezes que um usuário digitou um nome iniciado com a letra A,
+        //lembrando que o número de nome que o usuário irá digitar fica livre até que
+        //seja digitado SAIR.
+
+        var b, nome;
+        var a = 0;
+        while(b != 'sair'){
+            nome = prompt("Digite o nome: ");
+            if((nome.substring(0,1)) == 'a'){
+                a++;
+            }
+            b = prompt("Aperte qualquer tecla para continuar, digite sair, para sair");
+        }
+        alert(a);
+    </script>
+</body>
+</html>

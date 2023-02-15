@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var alternativa = (window.prompt("Insira a alternativa:"));
+       
+       if (alternativa == "a"){
+           console.log(a(Number (window.prompt("Insira a quantidade: "))));
+       } else  
+           if (alternativa == "b" ){
+               console.log(b(Number (window.prompt("Insira a quantidade: "))));
+           } else
+               if (alternativa == "c") {
+                   console.log(c(Number (window.prompt("Insira a quantidade: "))));
+               } else 
+                  if (alternativa == "d"){
+                   console.log(d(Number (window.prompt("Insira a quantidade: "))));
+                   } else {
+                       console.log("A alternativa está incorreta! Tente novamente.");
+                   }
+       function a (quantidade){
+           console.log(quantidade);
+       }
+
+       function b (quantidade){
+           var perdidoPorCasacoM = (7920 * 0.0425);
+           var perdidoPedido = ((quantidade * perdidoPorCasaco) / 1000) ;
+           return perdidoPedido;
+       }  
+       function c (quantidade){
+           var totalPedido = (((quantidade * 3972) + (quantidade * 7920) + (quantidade * 9986)) / 1000);
+           return totalPedido;
+       }
+       function d (quantidade){
+           var perdidoPorCasacoP = (3972 * 0.033);
+           var perdidoPorCasacoG = (42000 / 100);
+           var quilometrosPerdidos = (((quantidade * perdidoPorCasacoP)/1000) + ((quantidade * perdidoPorCasacoG)/1000));              
+           return quilometrosPerdidos;
+       }          
+    </script>
+</body>
+</html>

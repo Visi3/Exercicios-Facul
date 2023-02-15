@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        //Mario tem um sistema porem o mesmo não possui um
+        //sistema de login, para auxiliar ele nos devemos criar um sistema que solicite
+        //uma senha caso o usuário erre a senha por 4 vezes o sistema deve finalizar a
+        //operação, para solucionar esse problema nos foi solicitado que seja usado
+        //somente, for, variável e if.
+
+        var i, senha;
+        var log = 'abc';
+
+        for(i = 0; i < 4; i++){
+            senha = prompt("Digite a senha: ");
+            if(senha == 'abc'){
+                i = 4;
+                alert("Bem vindo!");
+            }else{
+                alert("Tente novamente");
+            }
+        }
+    </script>
+</body>
+</html>

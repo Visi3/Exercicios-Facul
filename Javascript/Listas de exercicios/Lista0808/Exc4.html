@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc04</title>
+</head>
+<body>
+    <script>
+        let vetor = new Array()
+        let escolha = 1
+
+        while (escolha !== 0) {
+            escolha = parseInt(prompt("Escolha: \n1- Adicionar um valor \n2- Remover último registro \n3-Pesquisar \n4-Imprimir vetor \n0- sair"))
+
+            switch(escolha){
+
+                case 1:
+                    vetor.push("\n" + prompt("Digite a palavra que quer adicionar:"))
+                    break;
+                case 2:
+                    vetor.pop()
+                    alert("Valor retirado com sucesso!")
+                    break;
+                case 3:
+                    let pesquisa = prompt("Digite o valor a ser pesquisado: ")
+                    for(let i = 0;i < vetor.length;i++){
+                        if(vetor[i] === pesquisa) {
+                            alert("A palavra pesquisada encontra-se na posição "+i);
+                        }
+                    }
+                    break;
+                case 4:
+                    alert(vetor)
+                    break;
+                case 0:
+                    break;
+              
+                default:
+                    alert("Escolha inválida!")
+
+            }
+        }
+
+    </script>
+</body>
+</html>

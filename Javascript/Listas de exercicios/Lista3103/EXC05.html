@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EXC05</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var salarioBruto = Number(window.prompt("Informe o salário bruto: "));
+        var adicionais = Number(window.prompt("Informe os adicionais: "));
+        var despesas = Number(window.prompt("Informe as despesas: "));
+        var salarioLiquido = ((salarioBruto+adicionais)-despesas);
+
+        console.log("O salario liquido ficará ",salarioLiquido,",00")
+    </script>
+</body>
+</html>

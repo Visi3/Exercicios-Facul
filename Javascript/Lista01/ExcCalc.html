@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(145, 145, 145);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    section{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-200%);
+    }
+    .entrada{
+        height: 1cm;
+        width: 4cm;
+        margin: 0.2cm;
+        border: none;
+        border-radius: 0.1cm;
+        font-size: x-large;
+    }
+    .botao {
+        height: 1cm;
+        width: 1cm;
+        border-radius: 3px;
+        margin: 2px;
+        border:none;
+        font-size: x-large;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+    h1{text-align: center;}
+    div{
+        margin: 0 auto;
+    }
+</style>
+<section >
+    <form action=""  method="post">
+        <h1 >Calculadora</h1>
+        <input type="text" class="entrada" name="Valores"/>
+        <div >
+            <input type="button" class="botao" value="+"/>
+            <input type="button" class="botao" value="-">
+            <input type="button" class="botao" value="/"/>
+            <input type="button" class="botao" value="x"/>
+            <input type="button" class="botao" value="="/>
+            
+        </div>
+    </form>
+</section>
+</body>
+</html>

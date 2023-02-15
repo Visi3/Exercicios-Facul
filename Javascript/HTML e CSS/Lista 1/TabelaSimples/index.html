@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="programa.js"></script>
+    <style>
+        #divpessoas{
+            font: 14px, Verdana;
+            margin-left: 35%;
+            margin-top: 150px;
+        }
+        #tabelapessoas{
+            font: 14px, Verdana;
+            margin-left: 35%;
+            
+        }
+        table tr td {
+            width: 140px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="divpessoas">
+        <form name="formpessoas">
+            <label>Nome:</label><br/>
+            <input type="text"id="Nome" /><br/><br/>
+            <label>Quantidade:</label><br/>
+            <input type="text" id="quant"/><br/><br/>
+            <label>Valor:</label> <br/>
+            <input type="text" id="valor" /><br/><br/>
+            <input type="button" value="Enviar" onclick="cadProduto()"/>            
+        </form>
+    </div>
+    <br/><br/>
+    <div id="tabelapessoas">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <td>Nome</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>

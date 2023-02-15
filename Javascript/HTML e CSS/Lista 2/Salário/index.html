@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="programa.js"></script>
+    <title>Salário</title>
+</head>
+<style>
+    body{
+        margin-top: 25px;
+        margin-left: 45%;
+        padding: auto;
+        background-color: rgb(253, 253, 253);
+    }
+
+    #botao{
+        padding: 8px;
+        margin-top: 10px;
+        margin-left: 12%;
+        border: none;
+        background-color: rgb(200, 157, 241);
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    label{
+        margin: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-top: 7px;
+        
+    }
+
+    #sal{
+        padding: 5px;
+        border: none;
+        background-color: rgb(233, 233, 233);
+        border-radius: 5px;
+        margin: 1px;
+    }
+
+    #divisor{
+        margin: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-top: 7px;
+        color: rgb(79, 12, 142);
+    }
+
+    
+</style>
+<body>
+    <form>
+        <div>
+            <label>Salário:</label>
+            <p></p>
+            <input type="text" id="sal" maxlength="5" placeholder="Ex: 1200">
+            <p></p>
+            <input type="button" id="botao" value="Verificar" onclick="calcular()">
+        </div>
+    </form>
+    <div id="divisor">
+
+    </div>
+    
+</body>
+</html>

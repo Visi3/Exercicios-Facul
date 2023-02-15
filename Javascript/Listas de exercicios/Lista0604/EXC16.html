@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EXC16</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var idade = Number (window.prompt("Digite a idade"));
+
+        if (idade >= 5 && idade <= 7 ){
+            console.log("Infantil A");
+        } else
+             if (idade >= 8 && idade <= 10 ){
+                console.log("Infantil B");
+            } else
+                if (idade >= 11 && idade <= 13 ){
+                    console.log("Juvenil A");
+                } else
+                    if (idade >= 14 && idade <= 17 ){
+                        console.log("Juvenil B");
+                    } else
+                        if (idade >= 18 ){
+                            console.log("Adulto");
+                        } else {
+                            console.log("Idade inválida!");
+                        }
+    </script>
+</body>
+</html>

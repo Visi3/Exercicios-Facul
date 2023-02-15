@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EXC01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var i = 0 ;
+        var nota = [i];
+        var aulas = (window.prompt("Insira a quantidade de aulas que foram dadas: "));
+        var presenca = (window.prompt("Insira a quantidade de presenças do aluno: "));
+        var nome = (window.prompt("Insira o nome do aluno: "));
+
+        while  (i < 4){
+            nota[i] = Number (window.prompt("Insira as notas: "));
+            i = i + 1 ;
+        }
+        
+        var media = ((nota[0] + nota[1] + nota[2] + nota[3]) / 4);
+        
+
+        if (media >= 70 && presenca >= (aulas * 0.75) ) {
+              console.log("O aluno: ",nome," está aprovado. Com média de ",media); 
+        } else {
+            console.log("O aluno: ",nome," está reprovado!");
+        }
+            
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc03</title>
+</head>
+<body>
+    <script>
+        let produtos = new Array(i);
+        let gastos  = new Array(i);
+        let gastoTotal = 0;
+
+        var parada = prompt("Quantos produtos são?")
+
+        for (var i = 1;i <= parada; i++){
+            produtos[i] = "\n" + prompt("Insira o " + i + " produto que você comprou:")
+            gastos[i] = Number( prompt("Insira o valor do produto:"));
+            gastoTotal += gastos[i];
+
+
+        }
+        alert("\n Todos os produtos comprados: " + "\n" + produtos + "\nTotal de gastos:" + gastoTotal);
+        
+    </script>
+</body>
+</html>

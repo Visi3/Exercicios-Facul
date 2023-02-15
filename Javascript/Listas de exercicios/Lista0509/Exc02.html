@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 2-  Crie um sistema onde o usuário possa cadastrar, carros com ano, modelo e marca e que o usuário possa cadastrar, listar e pesquisar carros.
+
+let carro  = new Array()
+let ano  = new Array()
+let modelo  = new Array()
+let marca  = new Array()
+let escolha = 1
+ 
+while(escolha != 0){
+    escolha = prompt("Digite:\n 1 - Cadastrar \n, 2 - Remover o ultimo registro \n, 3 - Pesquisar \n, 4 - Mostrar a Lista de Registro")
+    switch(escolha){
+    case "1":
+        carro.push(prompt("Adicione o nome do carro"));
+        ano.push(prompt("Adicione o ano do veiculo"));
+        modelo.push(prompt("Adicione o modelo"));
+        marca.push(prompt("Adicione o nome da marca"));
+        break;
+
+
+    case "2":
+        carro.pop();
+        ano.pop();
+        modelo.pop();
+        marca.pop();
+        break;          
+
+    case "3":
+        let pesquisa = prompt("Digite o carro que voce quer pesquisar");
+        for(let i = 0; i < carro.length;i++){
+        if(carro[i] === pesquisa){
+            alert("O veiculo encontra-se na posição"+i);
+            }
+         }
+            break;
+    
+    case "4":
+        alert(carro)
+        alert(ano)
+        alert(modelo)
+        alert(marca)
+        break;
+
+    }
+}
+
+alert(bau)
+
+    </script>
+</body>
+</html>

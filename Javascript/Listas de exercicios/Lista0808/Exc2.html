@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc02</title>
+</head>
+<body>
+    <script>
+        let sequencia = new Array (i);
+        let primos = new Array (i);
+
+        for (var i = 10; i > 1; i--){
+            sequencia[i] = Number (prompt("Digite o "+ i +" número da sequência:"));
+
+            for (let divisor = 2 ; divisor <= sequencia[i]; divisor++){
+                if ((sequencia[i] % divisor != 0) || (sequencia[i] === 2)) {
+                    primos[i] = "\n" + sequencia[i];
+                    break;
+                } else {
+                    break;
+                }
+            }
+        }gb
+        alert(primos)
+    </script>
+</body>
+</html>

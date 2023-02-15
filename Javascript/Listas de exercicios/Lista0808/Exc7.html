@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc7</title>
+</head>
+<body>
+    <script>
+        let altura = prompt("Digite a sua altura: ")
+        let peso = prompt("Digite o seu peso:")
+
+        let resultado = peso / (altura * altura)
+
+        if ((resultado < 18.5) && (resultado > 0)) {
+            alert("Classificação: Magreza \n Imc: " + resultado)
+        } else {
+            if ((resultado > 18.5) && (resultado < 25) ) {
+                alert("Classificação: Normal \n Imc: " + resultado)
+            } else {
+                if((resultado > 25) && (resultado < 30)){
+                    alert("Classificação: Sobrepeso \n Imc: " + resultado)
+                } else {
+                    if ((resultado > 30) && (resultado < 40)) {
+                        alert("Classificação: Obesidade \n Imc: " + resultado)
+                    } else {
+                        if (resultado > 40){
+                            alert("Classificação: Obesidade Grave \n Imc: " + resultado)
+                        }
+                    }    
+                }
+            }
+        }
+    </script>
+</body>
+</html>

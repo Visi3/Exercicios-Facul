@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc04</title>
+</head>
+<body>
+    <script>
+
+        let vetor = new Array()
+        let i = Number(prompt("Quantas idades você gostaria de verificar: "))
+        let maiores = 0, menores = 0
+
+
+        for(let j = 0;j < i;j++) {
+            vetor[i] = Number(prompt("Insira a "+ (j+1) +" idade: "))
+            if (vetor[i] >= 18 && vetor[i] < 120) {
+                maiores++
+            } else {
+                menores++ 
+            }
+        }
+        alert("Maiores = " + maiores + "\nMenores = " + menores)
+
+    </script>
+</body>
+</html>

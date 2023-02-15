@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Imc</title>
+    <script src="programa.js"></script>
+</head>
+<style>
+    body{
+        margin-top: 25px;
+        margin-left: 45%;
+        padding: auto;
+        background-color: rgb(253, 253, 253);
+    }
+
+    button{
+        padding: 8px;
+        margin-top: 10px;
+        border: none;
+        background-color: rgb(200, 157, 241);
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    #peso{
+        padding: 5px;
+        border: none;
+        background-color: rgb(233, 233, 233);
+        border-radius: 5px;
+    }
+
+    #alt{
+        padding: 5px;
+        border: none;
+        background-color: rgb(233, 233, 233);
+        border-radius: 5px;
+    }
+
+    label{
+        margin: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-top: 5px;
+        
+    }
+
+    
+</style>
+<body>
+    <form>
+        <div>
+            <label>Peso</label>
+            <p></p>
+            <input type="number" maxlength="3" id="peso">           
+        </div>
+
+        <div>
+            <label>Altura</label>
+            <p></p>
+            <input type="number" maxlength="3" id="alt" placeholder="Ex: 1.70">           
+        </div>
+            <button onclick="calcular()">Calcular</button>
+        <div id = divisor>
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc03</title>
+</head>
+<body>
+    <script>
+        let nomes = new Array('Alexandro \n','João\n','Maria\n','Marcia\n','Alfredo\n','Gustavo\n','Tiago\n','Augusto\n','Mario\n','Bianca\n','Brenda\n','Ricardo\n','Renato\n','Alberto\n')
+        let letra = prompt("Digite a letra que você gostaria de colocar: ")
+
+
+        for(let i = 0; i< nomes.length;i++){
+            nomes[i] = nomes[i].substring(1)
+            nomes[i] = letra + nomes[i]
+        }
+        alert(nomes)
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Crie um sistema que verifique uma informação digitada e caso seja diferente de 0 adicione a um array, caso seja igual a 9
+//ele remove o último registro e caso seja 10 ele iniciar um array novo sem apagar o anterior.
+
+let inform;
+let infnovo = new Array();
+
+    
+    while(inform != "0"){
+        inform = prompt("Digite algum numero de 0 ao 10 (9 para Remover o Ultimo registro, 0 para para o algoritmo e 10 para acresentar o registro ao novo array)");
+    
+        switch(inform){
+            case "9":
+                inform.pop();
+                break;
+
+             case "10":
+             infnovo.push(prompt("Digite algum numero de 0 ao 10 no novo Array"));
+             break;
+
+             }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

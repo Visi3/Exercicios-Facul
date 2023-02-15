@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc06</title>
+</head>
+<body>
+    <script>
+        let opcao = 1
+        var chop = new Array(0)
+
+        while (opcao != 0){
+            opcao = Number(prompt("Escolha:\n1 - Adicionar um chopp\n4 - Remover um chopp\n9 - Fechar a conta"))
+            switch (opcao){
+                case 1:
+                    chop.push(1)
+                    alert("Produto adicionado com sucesso!")
+                    break;
+
+                case 4:
+                    chop.pop()
+                    alert("Produto removido com sucesso!")
+                    break;
+
+                case 9:
+                    alert("Total de chopps: " + chop.length + "\nTotal a pagar: " + (chop.length * 9.9))
+                    opcao = 0
+                    break;
+                    
+                default:
+                    alert("Escolha incorreta")
+
+            }
+        }
+
+    </script>
+</body>
+</html>

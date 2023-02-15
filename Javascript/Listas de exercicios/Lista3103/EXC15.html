@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EXC15</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        
+        var prestacao = Number(window.prompt("Digite o valor da prestação: "));
+        var taxa = Number(window.prompt("Digite o valor da taxa em dias: "));
+        var tempo = Number(window.prompt("Digite o tempo de atraso em dias: "));
+
+        valorprestacao = prestacao + (prestacao * (taxa/100) * tempo);
+
+        console.log("O valor da prestação em atraso ficará ",valorprestacao)
+      //  valor + (valor * (taxa/100) * temp)
+    </script>
+</body>
+</html>
